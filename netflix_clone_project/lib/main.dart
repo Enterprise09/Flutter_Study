@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:netflix_clone_project/widget/bottom_bar.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,24 +14,40 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'EFlix',
       theme: ThemeData(
-          brightness: Brightness.dark,
-          primaryColor: Colors.black,
-          accentColor: Colors.white),
-    );
-    home:
-    DefaultTabController(
-      length: 4,
-      child: Scaffold(
-        body: TabBarView(
-          physics: NeverScrollableScrollPhysics(),
-          children: <Widget>[
-            Container(),
-            Container(),
-            Container(),
-            Container()
-          ],
+        brightness: Brightness.dark,
+        primaryColor: Colors.black,
+        accentColor: Colors.white,
+      ),
+      home: DefaultTabController(
+        length: 4,
+        child: Scaffold(
+          body: TabBarView(
+            physics: NeverScrollableScrollPhysics(),
+            children: <Widget>[
+              Container(
+                child: Center(
+                  child: Text('Home'),
+                ),
+              ),
+              Container(
+                child: Center(
+                  child: Text('Search'),
+                ),
+              ),
+              Container(
+                child: Center(
+                  child: Text('Save'),
+                ),
+              ),
+              Container(
+                child: Center(
+                  child: Text('More'),
+                ),
+              ),
+            ],
+          ),
+          bottomNavigationBar: Bottom(),
         ),
-        bottomNavigationBar: BottomBar(),
       ),
     );
   }
