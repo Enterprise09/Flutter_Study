@@ -16,7 +16,7 @@ class _MyAppState extends State<MyApp> {
       title: 'EFlix',
       theme: ThemeData(
         brightness: Brightness.dark,
-        primaryColor: Colors.black,
+        primaryColor: Colors.white,
         accentColor: Colors.white,
       ),
       home: DefaultTabController(
