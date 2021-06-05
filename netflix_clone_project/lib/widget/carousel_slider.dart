@@ -11,7 +11,7 @@ class CarouselImage extends StatefulWidget {
 
 class _CarouselImageState extends State<CarouselImage> {
   late List<Movie> movies;
-  late List<Widget>? images;
+  List<Widget>? images;
   late List<String> keywords;
   late List<bool> likes;
   int _currentPage = 0;
