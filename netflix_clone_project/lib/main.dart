@@ -10,6 +10,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  late TabController tabController;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
