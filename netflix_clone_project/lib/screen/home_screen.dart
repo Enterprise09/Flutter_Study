@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone_project/model/model_movie.dart';
 import 'package:netflix_clone_project/widget/carousel_slider.dart';
+import 'package:netflix_clone_project/widget/circle_slider.dart';
 
 class HomeScreen extends StatefulWidget {
   _HomeScreenState createState() => _HomeScreenState();
@@ -47,7 +48,10 @@ class _HomeScreenState extends State<HomeScreen> {
             CarouselImage(movies: movies),
             TopBar(),
           ],
-        )
+        ),
+        CircleSlider(
+          movies: movies,
+        ),
       ],
     );
   }
