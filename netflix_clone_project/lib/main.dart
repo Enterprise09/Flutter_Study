@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:netflix_clone_project/screen/home_screen.dart';
 import 'package:netflix_clone_project/screen/more_screen.dart';
+import 'package:netflix_clone_project/screen/search_screen.dart';
 import 'package:netflix_clone_project/widget/bottom_bar.dart';
 
 void main() => runApp(MyApp());
@@ -28,11 +29,7 @@ class _MyAppState extends State<MyApp> {
             physics: NeverScrollableScrollPhysics(),
             children: <Widget>[
               HomeScreen(),
-              Container(
-                child: Center(
-                  child: Text('Search'),
-                ),
-              ),
+              SearchScreen(),
               Container(
                 child: Center(
                   child: Text('Save'),
