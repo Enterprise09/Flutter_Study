@@ -60,11 +60,23 @@ class _CarouselImageState extends State<CarouselImage> {
                     children: <Widget>[
                       likes[_currentPage]
                           ? IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                setState(() {
+                                  likes[_currentPage] = !likes[_currentPage];
+                                  movies[_currentPage].reference.updateData(
+                                      {'like': likes[_currentPage]});
+                                });
+                              },
                               icon: Icon(Icons.check),
                             )
                           : IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                setState(() {
+                                  likes[_currentPage] = !likes[_currentPage];
+                                  movies[_currentPage].reference.updateData(
+                                      {'like': likes[_currentPage]});
+                                });
+                              },
                               icon: Icon(Icons.add),
                             ),
                       Text(
