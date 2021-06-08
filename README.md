@@ -5,6 +5,7 @@
 
 ---
 
-1. Netflix Clone Coding
+### 1. Netflix Clone Coding
 * Run Like Netflix Application
 * Use Firebase FireStore
+* Real Time Database
