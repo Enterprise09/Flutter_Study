@@ -10,6 +10,9 @@ If try this app, must be Install Flutter, Dart Plugin for VScode <br>
 > 06.09 _ found some configuration error <br>
 > That clone by github, it doesn't run <br>
 > But I don'c know why <br>
+> > 06.15 _ Found that where is error <br>
+> > Just flutter pub get command don't work <br>
+> > Because Network was disconnected <br>
 
 <br>
 A few resources to get you started if this is your first Flutter project:
