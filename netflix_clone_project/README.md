@@ -6,6 +6,9 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application. <br>
 If try this app, must be Install Flutter, Dart Plugin for VScode <br>
+
+And you have to use physical devices
+
 > And First Page Contain Error <br>
 > 06.09 _ found some configuration error <br>
 > That clone by github, it doesn't run <br>
@@ -13,6 +16,9 @@ If try this app, must be Install Flutter, Dart Plugin for VScode <br>
 > > 06.15 _ Found that where is error <br>
 > > Just flutter pub get command don't work <br>
 > > Because Network was disconnected <br>
+> > > 06.16 _ Found Real Reason <br>
+> > > Launching in Chrom Debug Service It has some setting code have to add... <br>
+> > > And You will launching this app, you have to use physical devices! <br>
 
 <br>
 A few resources to get you started if this is your first Flutter project:
