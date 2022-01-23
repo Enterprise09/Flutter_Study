@@ -1,3 +1,4 @@
+import 'package:basic_flutter/widgets/index1.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,6 +33,7 @@ class _MyHomeState extends State<MyHome> {
   int _selectedIndex = 0;
 
   static const List<Widget> _widgetOptions = <Widget>[
+    MyIndex1(),
     Text('Index 0: Unit'),
     Text('Index 1: Alarm'),
     Text('Index 2: Time'),
