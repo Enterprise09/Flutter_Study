@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_study/screen/screen_choice_chip.dart';
+import 'package:ui_study/screen/screen_expansion_tile.dart';
 import 'package:ui_study/screen/screen_stapper.dart';
 
 class MyHomeScreen extends StatelessWidget {
@@ -69,6 +70,17 @@ class _MyHomeState extends State<MyHome> {
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return const ChoiceChipScreen();
+                  }));
+                },
+              ),
+              ListTile(
+                title: const Text(
+                  'Expansion Tile',
+                  style: TextStyle(fontSize: 17),
+                ),
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const ExpansionTileScreen();
                   }));
                 },
               ),
