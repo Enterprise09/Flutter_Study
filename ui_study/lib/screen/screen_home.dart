@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_study/screen/screen_choice_chip.dart';
 import 'package:ui_study/screen/screen_expansion_tile.dart';
+import 'package:ui_study/screen/screen_pageview.dart';
 import 'package:ui_study/screen/screen_stapper.dart';
 import 'package:ui_study/screen/screen_timepicker.dart';
 
@@ -93,6 +94,17 @@ class _MyHomeState extends State<MyHome> {
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return const TimePickerScreen();
+                  }));
+                },
+              ),
+              ListTile(
+                title: const Text(
+                  'Page View',
+                  style: TextStyle(fontSize: 17),
+                ),
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const PageViewScreen();
                   }));
                 },
               ),
