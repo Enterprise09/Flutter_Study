@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ui_study/screen/screen_choice_chip.dart';
 import 'package:ui_study/screen/screen_expansion_tile.dart';
 import 'package:ui_study/screen/screen_stapper.dart';
+import 'package:ui_study/screen/screen_timepicker.dart';
 
 class MyHomeScreen extends StatelessWidget {
   const MyHomeScreen({Key? key}) : super(key: key);
@@ -81,6 +82,17 @@ class _MyHomeState extends State<MyHome> {
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return const ExpansionTileScreen();
+                  }));
+                },
+              ),
+              ListTile(
+                title: const Text(
+                  'Time picker',
+                  style: TextStyle(fontSize: 17),
+                ),
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const TimePickerScreen();
                   }));
                 },
               ),
